@@ -14,6 +14,9 @@
       --accent-glow: rgba(0, 242, 254, 0.25);
       --text-main: #e2e8f0;
       --text-dim: #94a3b8;
+      --term-green: #00ff87;
+      --term-yellow: #f1fa8c;
+      --term-red: #ff5555;
     }
 
     * {
@@ -148,6 +151,120 @@
       color: var(--accent-cyan);
     }
 
+    /* Fastfetch / Terminal Section */
+    .terminal-card {
+      background: #090d12;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+
+    .terminal-card:hover {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .terminal-header {
+      background: #121a24;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .term-btn {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .term-btn.red { background: var(--term-red); }
+    .term-btn.yellow { background: var(--term-yellow); }
+    .term-btn.green { background: var(--term-green); }
+
+    .terminal-title {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      margin-left: auto;
+    }
+
+    .terminal-body {
+      padding: 1.2rem 1.5rem;
+      font-family: 'Cascadia Code', 'Fira Code', 'Consolas', 'Courier New', monospace;
+      font-size: 0.85rem;
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      overflow-x: auto;
+    }
+
+    .ascii-art {
+      color: var(--accent-cyan);
+      font-weight: bold;
+      line-height: 1.15;
+      font-size: 0.78rem;
+      white-space: pre;
+      user-select: none;
+      animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% { text-shadow: 0 0 2px rgba(0, 242, 254, 0.2); }
+      100% { text-shadow: 0 0 10px rgba(0, 242, 254, 0.7); }
+    }
+
+    .fastfetch-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      color: var(--text-main);
+    }
+
+    .ff-title {
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    .ff-sep {
+      color: var(--text-dim);
+      margin-bottom: 0.3rem;
+    }
+
+    .ff-line {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .ff-key {
+      color: var(--accent-cyan);
+      font-weight: 600;
+      min-width: 80px;
+    }
+
+    .ff-val {
+      color: var(--text-main);
+    }
+
+    .cursor-blink {
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background-color: var(--accent-cyan);
+      margin-left: 4px;
+      animation: blink 1s infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
     /* Section Titles */
     .section-title {
       text-align: center;
@@ -210,6 +327,11 @@
     @media (max-width: 768px) {
       .content-grid {
         grid-template-columns: 1fr;
+      }
+      .terminal-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
       }
     }
 
@@ -339,6 +461,38 @@
       </div>
     </div>
 
+    <!-- Fastfetch / System Spec Terminal Section -->
+    <div class="section-title">&lt;MAIN WORKSTATION SPECS&gt;</div>
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <span class="term-btn red"></span>
+        <span class="term-btn yellow"></span>
+        <span class="term-btn green"></span>
+        <span class="terminal-title">pul@thinkpad-t14: ~ (fastfetch)</span>
+      </div>
+      <div class="terminal-body">
+        <pre class="ascii-art">
+  +------------------+
+  | .--------------. |
+  | |  ThinkPad    | |
+  | |  [T14 Gen 1] | |
+  | '--------------' |
+  +-------[||]-------+
+  [==================]
+        </pre>
+        <div class="fastfetch-info">
+          <div class="ff-title">pul@thinkpad-t14</div>
+          <div class="ff-sep">-------------------</div>
+          <div class="ff-line"><span class="ff-key">OS:</span><span class="ff-val">Windows 10 IoT Enterprise LTSC</span></div>
+          <div class="ff-line"><span class="ff-key">Host:</span><span class="ff-val">Lenovo ThinkPad T14 Gen 1 Intel</span></div>
+          <div class="ff-line"><span class="ff-key">CPU:</span><span class="ff-val">Intel Core i5-10310U @ 4.40GHz</span></div>
+          <div class="ff-line"><span class="ff-key">Memory:</span><span class="ff-val">20GB DDR4 @ 2666MHz</span></div>
+          <div class="ff-line"><span class="ff-key">Disk:</span><span class="ff-val">256GB NVMe M.2 SSD</span></div>
+          <div class="ff-line"><span class="ff-key">Status:</span><span class="ff-val">Online & Ready<span class="cursor-blink"></span></span></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Tech Stack & Hobi -->
     <div class="section-title">&lt;HOBBIES & SKILLS&gt;</div>
     <div class="skills-grid">
@@ -392,7 +546,7 @@
               <i class="fas fa-laptop"></i>
               <h3>ThinkPad T14 Gen 1 Intel</h3>
             </div>
-            <p>Main Workstation Laptop</p>
+            <p>Main Workstation Laptop (i5-10310U / 20GB RAM / Win10 LTSC)</p>
           </div>
 
           <div class="card">

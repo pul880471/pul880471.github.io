@@ -372,6 +372,23 @@
       color: var(--text-dim);
     }
 
+    /* Specs Detail inside Device Cards */
+    .device-specs {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 0.6rem;
+    }
+
+    .device-specs span {
+      color: var(--accent-cyan);
+    }
+
     /* Tags */
     .tags {
       display: flex;
@@ -539,6 +556,13 @@
               <h3>Samsung Galaxy A54 5G</h3>
             </div>
             <p>Daily Driver Smartphone</p>
+            <div class="device-specs">
+              <div><span>SoC:</span> Exynos 1380 | Mali-G68</div>
+              <div><span>RAM:</span> 8GB LPDDR4X</div>
+              <div><span>Storage:</span> 256GB UFS 2.2</div>
+              <div><span>Charging:</span> 25W Fast Charging</div>
+              <div><span>OS:</span> Samsung OneUI 8.5</div>
+            </div>
           </div>
 
           <div class="card">
@@ -546,7 +570,13 @@
               <i class="fas fa-laptop"></i>
               <h3>ThinkPad T14 Gen 1 Intel</h3>
             </div>
-            <p>Main Workstation Laptop (i5-10310U / 20GB RAM / Win10 LTSC)</p>
+            <p>Main Workstation Laptop</p>
+            <div class="device-specs">
+              <div><span>CPU:</span> Intel Core i5-10310U</div>
+              <div><span>RAM:</span> 20GB DDR4 2666MHz</div>
+              <div><span>Storage:</span> 256GB NVMe SSD</div>
+              <div><span>OS:</span> Win 10 IoT Enterprise LTSC</div>
+            </div>
           </div>
 
           <div class="card">
@@ -554,7 +584,14 @@
               <i class="fas fa-mobile-retro"></i>
               <h3>Redmi Note 8</h3>
             </div>
-            <p>Secondary Device / Root & Custom ROM Project</p>
+            <p>Secondary Device / Oprekan Lab</p>
+            <div class="device-specs">
+              <div><span>SoC:</span> Snapdragon 665 | Adreno 610</div>
+              <div><span>RAM:</span> 4GB LPDDR4X</div>
+              <div><span>Storage:</span> 64GB eMMC 5.1</div>
+              <div><span>Charging:</span> 18W Fast Charging</div>
+              <div><span>OS:</span> LineageOS + Kali NetHunter</div>
+            </div>
           </div>
 
           <div class="card">
@@ -572,6 +609,23 @@
       <div>
         <div class="section-title">&lt;PROJECTS & EXPERIMENTS&gt;</div>
         <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-terminal"></i>
+              <h3>Kali NetHunter Mobile Lab</h3>
+            </div>
+            <p>Penetration testing lab & mobile auditing tools di Redmi Note 8 pakai dual boot / chroot NetHunter.</p>
+            <div class="tags">
+              <span class="tag">NetHunter</span>
+              <span class="tag">LineageOS</span>
+              <span class="tag">PenTesting</span>
+            </div>
+            <div class="card-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
 
           <div class="card">
             <div class="card-header">
@@ -617,23 +671,6 @@
               <span class="tag">Virtualization</span>
               <span class="tag">Docker</span>
               <span class="tag">Linux</span>
-            </div>
-            <div class="card-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-mobile-vibration"></i>
-              <h3>Android Root & Custom ROM</h3>
-            </div>
-            <p>Modifikasi firmware, flashing custom kernel, dan optimasi performa Android.</p>
-            <div class="tags">
-              <span class="tag">Root</span>
-              <span class="tag">Custom ROM</span>
-              <span class="tag">Magisk</span>
             </div>
             <div class="card-links">
               <a href="#"><i class="fab fa-github"></i></a>

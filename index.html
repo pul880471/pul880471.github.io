@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pul — Tech Hub</title>
+  <title>PUL. — Tech Hub</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
@@ -125,10 +125,27 @@
       text-shadow: 0 0 15px var(--accent-glow);
     }
 
-    .hero p {
-      color: var(--text-dim);
+    .hero .personal-info {
+      color: var(--accent-cyan);
       font-size: 0.95rem;
+      font-weight: 600;
       letter-spacing: 1px;
+      margin-top: 0.4rem;
+    }
+
+    .hero .education-info {
+      color: var(--text-dim);
+      font-size: 0.88rem;
+      letter-spacing: 0.5px;
+      margin-top: 0.6rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .hero .education-info span {
+      color: var(--accent-cyan);
     }
 
     /* Section Titles */
@@ -314,39 +331,44 @@
     <!-- Hero Banner -->
     <div class="hero">
       <h1>PUL<span>.</span></h1>
-      <p>10 TKJ 1 — SMK Kartika XX-1 Makassar</p>
+      <div class="personal-info">15 Y.O. — Kelas 10 TKJ</div>
+      <div class="education-info">
+        <div><i class="fas fa-graduation-cap"></i> SMK Kartika XX-1 Makassar</div>
+        <div>•</div>
+        <div><i class="fas fa-school"></i> Alumnus SMP Frater Makassar</div>
+      </div>
     </div>
 
-    <!-- Tech Stack -->
-    <div class="section-title">&lt;TECH STACK & INTERESTS&gt;</div>
+    <!-- Tech Stack & Hobi -->
+    <div class="section-title">&lt;HOBBIES & SKILLS&gt;</div>
     <div class="skills-grid">
       <div class="skill-card">
+        <i class="fas fa-gamepad"></i>
+        <span>Main Game</span>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-network-wired"></i>
+        <span>Experiment Jaringan</span>
+      </div>
+      <div class="skill-card">
         <i class="fab fa-linux"></i>
-        <span>Custom OS</span>
+        <span>Linux & Custom OS</span>
       </div>
       <div class="skill-card">
         <i class="fab fa-android"></i>
         <span>Android Oprekan</span>
       </div>
       <div class="skill-card">
-        <i class="fas fa-network-wired"></i>
-        <span>Networking (MikroTik)</span>
+        <i class="fas fa-server"></i>
+        <span>Virtualization</span>
       </div>
       <div class="skill-card">
-        <i class="fas fa-screwdriver-wrench"></i>
-        <span>Hardware Modding</span>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-python"></i>
-        <span>Python & Scripting</span>
+        <i class="fas fa-shield-halved"></i>
+        <span>AdGuard & DNS</span>
       </div>
       <div class="skill-card">
         <i class="fab fa-docker"></i>
         <span>Docker & Home Lab</span>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-html5"></i>
-        <span>Pure HTML & CSS</span>
       </div>
     </div>
 
@@ -399,45 +421,65 @@
 
           <div class="card">
             <div class="card-header">
-              <h3>Android Root & ROM Mods</h3>
+              <i class="fas fa-shield-virus"></i>
+              <h3>AdGuard Home Server</h3>
+            </div>
+            <p>Deployment server DNS AdGuard Home untuk blocking iklan & tracking di seluruh jaringan lokal.</p>
+            <div class="tags">
+              <span class="tag">AdGuard</span>
+              <span class="tag">DNS</span>
+              <span class="tag">Network Security</span>
+            </div>
+            <div class="card-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-diagram-project"></i>
+              <h3>Local Network Stack</h3>
+            </div>
+            <p>Konfigurasi dan integrasi infrastruktur jaringan lokal menggunakan router & custom routing policy.</p>
+            <div class="tags">
+              <span class="tag">MikroTik</span>
+              <span class="tag">Routing</span>
+              <span class="tag">Home Lab</span>
+            </div>
+            <div class="card-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-cubes"></i>
+              <h3>Virtualization Server</h3>
+            </div>
+            <p>Eksperimen server virtualisasi untuk running multiple isolated environments & container testing.</p>
+            <div class="tags">
+              <span class="tag">Virtualization</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Linux</span>
+            </div>
+            <div class="card-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-mobile-vibration"></i>
+              <h3>Android Root & Custom ROM</h3>
             </div>
             <p>Modifikasi firmware, flashing custom kernel, dan optimasi performa Android.</p>
             <div class="tags">
               <span class="tag">Root</span>
               <span class="tag">Custom ROM</span>
               <span class="tag">Magisk</span>
-            </div>
-            <div class="card-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <h3>Home Server Setup</h3>
-            </div>
-            <p>Pengembangan local server portable & DNS ad-blocking di perangkat mobile.</p>
-            <div class="tags">
-              <span class="tag">Termux</span>
-              <span class="tag">AdGuard</span>
-              <span class="tag">DNS</span>
-            </div>
-            <div class="card-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <h3>Personal Portfolio Web</h3>
-            </div>
-            <p>Halaman portofolio cyberpunk minimalist yang di-host gratis lewat GitHub Pages.</p>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">GitHub Pages</span>
             </div>
             <div class="card-links">
               <a href="#"><i class="fab fa-github"></i></a>

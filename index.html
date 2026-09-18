@@ -203,26 +203,12 @@
       overflow-x: auto;
     }
 
-    .ascii-art {
-      color: var(--accent-cyan);
-      font-weight: bold;
-      line-height: 1.15;
-      font-size: 0.78rem;
-      white-space: pre;
-      user-select: none;
-      animation: pulseGlow 3s infinite alternate;
-    }
-
-    @keyframes pulseGlow {
-      0% { text-shadow: 0 0 2px rgba(0, 242, 254, 0.2); }
-      100% { text-shadow: 0 0 10px rgba(0, 242, 254, 0.7); }
-    }
-
     .fastfetch-info {
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
       color: var(--text-main);
+      width: 100%;
     }
 
     .ff-title {
@@ -488,15 +474,6 @@
         <span class="terminal-title">pul@thinkpad-t14: ~ (fastfetch)</span>
       </div>
       <div class="terminal-body">
-        <pre class="ascii-art">
-  +------------------+
-  | .--------------. |
-  | |  ThinkPad    | |
-  | |  [T14 Gen 1] | |
-  | '--------------' |
-  +-------[||]-------+
-  [==================]
-        </pre>
         <div class="fastfetch-info">
           <div class="ff-title">pul@thinkpad-t14</div>
           <div class="ff-sep">-------------------</div>
@@ -590,7 +567,8 @@
               <div><span>RAM:</span> 4GB LPDDR4X</div>
               <div><span>Storage:</span> 64GB eMMC 5.1</div>
               <div><span>Charging:</span> 18W Fast Charging</div>
-              <div><span>OS:</span> LineageOS + Kali NetHunter</div>
+              <div><span>OS:</span> LineageOS 23.2 (Android 17)</div>
+              <div><span>Mods:</span> NetHunter Kernel + Magisk + KeX</div>
             </div>
           </div>
 
@@ -615,11 +593,12 @@
               <i class="fas fa-terminal"></i>
               <h3>Kali NetHunter Mobile Lab</h3>
             </div>
-            <p>Penetration testing lab & mobile auditing tools di Redmi Note 8 pakai dual boot / chroot NetHunter.</p>
+            <p>Environment penetration testing mobile di Redmi Note 8 berbasis LineageOS 23.2, NetHunter Kernel, Magisk Root, dan NetHunter KeX support.</p>
             <div class="tags">
               <span class="tag">NetHunter</span>
-              <span class="tag">LineageOS</span>
-              <span class="tag">PenTesting</span>
+              <span class="tag">LineageOS 23.2</span>
+              <span class="tag">KeX Support</span>
+              <span class="tag">Magisk</span>
             </div>
             <div class="card-links">
               <a href="#"><i class="fab fa-github"></i></a>

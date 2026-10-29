@@ -1,6 +1,6 @@
 # 🚀 Cyberpunk Futuristic Portfolio — Pul
 
-Website portofolio bertema **Futuristic Sci-Fi HUD & Cyberpunk** untuk **Be Johnsen (Pul)**, siswa **Kelas 10 TKJ (Teknik Komputer dan Jaringan)** di **SMK Kartika XX-1 Makassar**.
+Website portofolio bertema **Futuristic Sci-Fi HUD & Cyberpunk** untuk **Pul**, siswa **Kelas 10 TKJ (Teknik Komputer dan Jaringan)** di **SMK Kartika XX-1 Makassar**.
 
 ---
 

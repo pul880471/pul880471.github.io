@@ -491,10 +491,12 @@ function initTerminal() {
   <span style="color:var(--green)">skills</span>      - Show exact technical skills breakdown
   <span style="color:var(--green)">cabling</span>     - Show RJ-45 T568A & T568B color codes
   <span style="color:var(--green)">projects</span>    - List Arch, Mikrotik & hardware engineering projects
+  <span style="color:var(--green)">rigs</span>        - List hardware workstations (laptop & PC builds)
+  <span style="color:var(--green)">hobbies</span>     - Android modding, Galaxy A54 ecosystem, Shogun & 9V lab
+  <span style="color:var(--green)">bored</span>       - What Pul does when bored (9V battery tinkering & YouTube)
+  <span style="color:var(--green)">fastboot</span>    - Run Android fastboot / EDL diagnostics
   <span style="color:var(--green)">ping [ip]</span>   - Simulate ICMP ping to a remote host
   <span style="color:var(--green)">ipconfig</span>    - View simulated network interface config
-  <span style="color:var(--green)">fastboot</span>    - Run Android fastboot / EDL diagnostics
-  <span style="color:var(--green)">rigs</span>        - List hardware workstations (laptop & PC builds)
   <span style="color:var(--green)">contact</span>     - View Telegram, Instagram & TikTok channels
   <span style="color:var(--green)">clear</span>       - Clear the terminal console
   <span style="color:var(--green)">matrix</span>      - Run cyber data stream animation
@@ -514,18 +516,20 @@ function initTerminal() {
 `,
     neofetch: () => commands.fastfetch(),
     whoami: () => `
-<div style="color:var(--cyan)">[CADET PROFILE: BE JOHNSEN (PUL)]</div>
-  Name     : Be Johnsen (Pul)
+<div style="color:var(--cyan)">[CADET PROFILE: PUL]</div>
+  Name     : Pul
   Major    : Teknik Komputer dan Jaringan (TKJ)
   Level    : Grade 10 / SMK Kartika XX-1 Makassar
   Location : Makassar, Indonesia [WITA]
   Current  : Lenovo ThinkPad T14 Gen 1 (Bought April 2026, Active Oct 2026)
   Legacy   : 2.5 Years pure Arch Linux daily driver on ASUS P1411CJP
   Fortes   : Hardware Assembly (100%), Linux & Bash (100%), BIOS (100%), Mikrotik (89%)
+  Hobbies  : Android Custom ROMs (Redmi Note 8), A54 5G, Vintage Moto (Shogun Kebo)
+  Downtime : 9V battery & gadget tinkering, or watching YouTube till sleep
   Telegram : @FastbootIsMissingYouNeedEDL
 `,
     skills: () => `
-<div style="color:var(--cyan)">[TECHNICAL SKILL MATRIX - BE JOHNSEN (PUL)]</div>
+<div style="color:var(--cyan)">[TECHNICAL SKILL MATRIX - PUL]</div>
   [HARDWARE & SYSTEMS]
   - PC Assembly & Diagnostics          : 100% (Mastery)
   - Linux Server & Bash Scripting      : 100% (2.5 Yrs Pure Arch on ASUS P1411CJP)
@@ -592,6 +596,39 @@ function initTerminal() {
   GPU      : NVIDIA GeForce MX330 (Dead)
   OS       : Arch Linux (2.5 Continuous Years With Zero Distro-Hopping!)
 `,
+    hobbies: () => `
+<div style="color:var(--cyan)">[ADVANCED HOBBIES & HARDWARE ENGINEERING]</div>
+
+<span style="color:#3ddc84">▸ ANDROID SYSTEM MODDING (Redmi Note 8 - Qualcomm Snapdragon)</span>
+  - Bootloader Unlocking & Dynamic Partition Architecture
+  - Custom ROMs: crDroid, LineageOS, PixelOS
+  - Root Frameworks: Magisk & KernelSU (Low-level file system hooks)
+  - Custom Kernel Tuning & SELinux Policy Management
+
+<span style="color:var(--cyan)">▸ MOBILE ECOSYSTEM (Samsung Galaxy A54 5G)</span>
+  - Daily Driver Workflow Integration & Resource Monitoring
+  - Cross-Platform Synchronization with Linux & Windows Workstations
+  - One UI Performance Tuning & Background Process Optimization
+
+<span style="color:var(--amber)">▸ MECHANICAL RESTORATION (Suzuki Shogun FD110 "Kebo")</span>
+  - 4-Stroke Mechanical First-Principles Outside the Digital World
+  - Mikuni Carburetor Jetting, Tuning & Air-Fuel Ratio Adjustment
+  - Suspension Replacement & Frame Alignment
+  - 12V Electrical Harness Diagnostics & Ignition Troubleshooting
+
+<span style="color:#ffd700">▸ 9V BATTERY GADGET LABS & DOWNTIME ROUTINE</span>
+  - "When I’m bored, I like to mess around with a 9V battery and some small electronic gadgets until I get tired of it, or I watch YouTube until I fall asleep."
+  - Low-voltage DC probing, component testing, and late-night hardware/tech deep dives
+`,
+    bored: () => `
+<div style="color:#ffd700">[IDLE_CYCLE PROTOCOL // DOWNTIME ROUTINE]</div>
+  <span style="color:#e2e8f0">"When I’m bored, I like to mess around with a 9V battery and some small electronic gadgets until I get tired of it, or I watch YouTube until I fall asleep."</span>
+
+  <span style="color:var(--cyan)">Activities & Habits:</span>
+  - Connecting 9V batteries to random small electronic gadgets, LEDs, and small circuits
+  - Falling asleep to late-night YouTube tech, engineering, and hardware deep-dives
+`,
+    idle: () => commands.bored(),
     ipconfig: () => `
 <div style="color:var(--cyan)">Arch Linux / Network Interface Config:</div>
 2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP

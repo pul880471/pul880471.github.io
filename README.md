@@ -1,4 +1,4 @@
-# 🚀 Cyberpunk Futuristic Portfolio — Be Johnsen (Pul)
+# 🚀 Cyberpunk Futuristic Portfolio — Pul
 
 Website portofolio bertema **Futuristic Sci-Fi HUD & Cyberpunk** untuk **Be Johnsen (Pul)**, siswa **Kelas 10 TKJ (Teknik Komputer dan Jaringan)** di **SMK Kartika XX-1 Makassar**.
 
@@ -6,7 +6,7 @@ Website portofolio bertema **Futuristic Sci-Fi HUD & Cyberpunk** untuk **Be John
 
 ## ⚡ Identitas & Profil Cadet
 
-- **Nama**: Be Johnsen (Pul)
+- **Nama**: Pul
 - **Sekolah**: SMK Kartika XX-1 Makassar
 - **Kelas / Jurusan**: Kelas 10 TKJ (Teknik Komputer dan Jaringan)
 - **Lokasi**: Makassar, Sulawesi Selatan, Indonesia [WITA]

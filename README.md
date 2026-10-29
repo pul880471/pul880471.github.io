@@ -79,10 +79,3 @@ Website portofolio bertema **Futuristic Sci-Fi HUD & Cyberpunk** untuk **Pul**, 
    - Toggle tombol scanline monitor CRT.
 
 ---
-
-## 🚀 Cara Menjalankan
-
-Cukup **klik dua kali (double-click)** pada berkas:
-`C:\Users\Pul\.gemini\antigravity\scratch\tkj-futuristic-portfolio\index.html`
-
-Website akan langsung terbuka di browser Anda (Chrome, Edge, Firefox, Brave).
